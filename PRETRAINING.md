@@ -6,9 +6,7 @@ Please check [SETUP.md](SETUP.md) for set-up instructions first.
 All our models are pre-trained on a single node with **8 A100 GPUs**. 
 
 To pre-train MultiMAE on 8 GPUs using default settings, run:
-```bash
-OMP_NUM_THREADS=1 torchrun --nproc_per_node=8 run_pretraining_multimae.py \
---config cfgs/pretrain/multimae-b_98_rgb+-depth-semseg_1600e.yaml \
+```bash OMP_NUM_THREADS=1 torchrun --nproc_per_node=8 run_pretraining_multimae.py --config cfgs/pretrain/multimae-b_98_rgb+-depth-semseg_400e.yaml
 --data_path /path/to/imagenet/train
 ```
 
