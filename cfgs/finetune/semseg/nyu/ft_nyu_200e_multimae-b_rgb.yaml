@@ -35,7 +35,7 @@ data_path: 'assets/nyu/train' # Change me
 eval_data_path: 'assets/nyu/test' # Change me
 num_classes: 40
 dataset_name: nyu
-dist_eval: True
+dist_eval: False
 seg_reduce_zero_label: True
 eval_freq: 20
 
